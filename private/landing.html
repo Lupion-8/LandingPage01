@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/files/style.css">
+    <link rel="stylesheet" href="/files/annin.css">
     <link rel="icon" href="https://www.controllercontadores.com.br/wp-content/uploads/2020/07/favicon-Controller.png" sizes="32x32">
     <title>Controller</title>
     <script src="/socket.io/socket.io.js"></script>
@@ -19,20 +20,20 @@
         <div class="organize">
             <div class="div1">
                 <div class="centralize">
-                    <h1>CONTABILIDADE<br> DIGITAL</h1>
-                    <p>Tudo agora está no digital.<br> Por que a contabilidade da sua empresa não estaria?</p>     
+                    <h1 id="um" >CONTABILIDADE<br> DIGITAL</h1>
+                    <p id="dois">Tudo agora está no digital.<br> Por que a contabilidade da sua empresa não estaria?</p>     
                 </div>
             </div>
             <div class="div2">
                 <div>
-                    <img src="/files/controletes.png">
+                    <img id="tres" src="/files/controletes.png">
                 </div>
             </div>
         </div>
 
         <div class="div3">
-            <div class="div4">
-                <div class="div5">
+            <div id="quatro" >
+                <div id="cinco">
                     <div>
                         <img src="https://img.icons8.com/external-parzival-1997-flat-parzival-1997/64/000000/external-solution-artificial-intelligence-and-machine-learning-parzival-1997-flat-parzival-1997.png"/>
                         <h2>Solução Digital</h2>
@@ -40,7 +41,7 @@
                     </div>
                 </div>
 
-                <div class="div5">
+                <div id="cinco">
                     <div>
                         <img src="https://img.icons8.com/external-sbts2018-flat-sbts2018/58/000000/external-team-work-from-home-sbts2018-flat-sbts2018.png"/>
                         <h2>Equipe<br> Qualificada</h2>
@@ -48,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="div5">
+                <div id="cinco">
                     <div>
                         <img src="https://img.icons8.com/external-dygo-kerismaker/48/000000/external-Support-web-development-dygo-kerismaker.png"/>
                         <h2>Atendimento Ágil</h2>
@@ -165,8 +166,6 @@
 
 
    
-    <script>
-    var socket = io();
-    </script>
+    <script src="/files/annin.js"></script>
     </body>
 </html>
