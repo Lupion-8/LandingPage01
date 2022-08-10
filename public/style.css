@@ -158,9 +158,10 @@ header > div > img{
     flex-direction: column;
     background-color: #f8f8f8;
 }
-.div7{
+#sete{
     display: flex;
     flex-direction: row;
+    opacity: 0;
 }
 
 .div8 > video{
@@ -315,4 +316,34 @@ header > div > img{
     font-size: 1.3vw;
     font-family: "Inter", Sans-serif;
     text-align: center;
+}
+
+#staticks{
+    position: fixed;
+    background-color: transparent;
+    width: 6vw;
+    height: 6vw;
+    bottom: 2vw;
+    right: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#whatsapp-share-btt {
+    display: inline-block;            
+    width: 4.5vw;
+    height: 4.5vw;
+    margin: 0.3vw;
+    background-size: 100% 100%; /* ou 'contain' */
+    background-image: url("./wts.png");
+    background-position: center;
+    border-radius: 20vw;
+}
+#whatsapp-share-btt:hover{
+    transition: 300ms;
+    width: 5vw;
+    height: 5vw; 
+    background-image: url("./wtsa.gif");
 }
