@@ -6,7 +6,10 @@ const contDigital = document.getElementById('um');
 const porqueDigital = document.getElementById('dois');
 const imagem1 = document.getElementById('tres');
 const beneficios = document.querySelectorAll('#cinco');
-const Quemsomos = document.getElementById('sete');
+const Quemsomos = document.getElementById('seis');
+const video = document.getElementById('video');
+
+const sete = document.querySelector("#sete");
 
 contDigital.classList.add('contDigital');
 porqueDigital.classList.add('porqueDigital');
@@ -17,18 +20,26 @@ beneficios[1].classList.add('beneficios');
 beneficios[2].classList.add('beneficios');
 
 
-window.onscroll = function() {myFunction()};
 
-function myFunction() {
+window.onscroll = function() {estaVisivel(sete)};
 
-    console.log(document.documentElement.scrollTop - 50/ document.documentElement.scrollTop) 
+
+function estaVisivel(el) {
+
+    const posicoes = el.getBoundingClientRect();
+    const inicio = posicoes.top;
+    const fim = posicoes.bottom;
+
+    let estaVisivel = false
     
-  if (document.documentElement.scrollTop / 700 > 1.0585714285714285 ) {
-    
-    Quemsomos.classList.add('quemSomos');
+    if((inicio >= 0) && (fim <= window.innerHeight)) {
+            estaVisivel = true;
+            Quemsomos.classList.add('quemSomos');
+            video.classList.add('video');
 
-  } else {
-    Quemsomos.classList.remove('quemSomos');
-  }
+    }else{Quemsomos.classList.remove('quemSomos');}
+    
+    return estaVisivel;
+    
 }
-   
+

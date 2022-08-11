@@ -28,3 +28,8 @@
     transition: 1s;
     opacity: 1 !important;
 }
+
+.video{
+    transition: 1s;
+    transform: translate(0vw) !important;
+}

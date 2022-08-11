@@ -21,14 +21,33 @@ header{
     color: aliceblue;
     position: fixed;
     width: 100%;
-
+    padding: 1vw;
     z-index: 3;
 }
 
-header > div{
- padding: 1vw;
+header > div {
+    display: flex;
+    flex-direction: row;
 }
-header > div > img{
+
+header > div >div{
+    flex: auto;
+}
+
+header > div > :nth-child(2){
+    padding-right: 2vw;
+    display: inherit;
+    justify-content: end;
+    align-items: center;
+}
+
+#seletivo{
+    padding: 0.3vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+header > div > div> img{
     width: 5vw;
 }
 
@@ -152,19 +171,21 @@ header > div > img{
     padding: 1.5vw;
     font-family: "Inter", Sans-serif;
 }
-.div6{
+#seis{
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f8f8f8;
 }
+
+
 #sete{
     display: flex;
     flex-direction: row;
-    opacity: 0;
 }
 
-.div8 > video{
+
+#video{
     width: 40vw;
     display: flex;
     align-items: center;
@@ -172,6 +193,7 @@ header > div > img{
     padding-right: 2vw;
     padding-bottom: 2vw;
     padding-top: 7vw;
+    transform: translate(-100vw);
 }
 
 .div9{
@@ -267,6 +289,12 @@ header > div > img{
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
+    transition: 300ms;
+}
+.div13:hover, .div14:hover, .div15:hover{
+    background-color: rgb(26, 16, 75);
+    color:  white;
+    transition: 500ms;
 }
 
 .div17{
@@ -292,6 +320,12 @@ header > div > img{
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
+}
+
+.div19:hover, .div20:hover, .div21:hover{
+    background-color: rgb(26, 16, 75);
+    color:  white;
+    transition: 500ms;
 }
 
 .div13 > img, .div14 > img, .div15 > img, .div19 > img,  .div20 > img,  .div21 > img{
@@ -346,4 +380,185 @@ header > div > img{
     width: 5vw;
     height: 5vw; 
     background-image: url("./wtsa.gif");
+}
+
+#contato{
+    background-color: #dbd6d6;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.elementor-shape-fill{
+    fill: white;
+}
+
+
+.div22{
+    display: flex;
+    flex-direction: row;
+}
+
+.div23{
+    background-color: #dbd6d6;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vw;
+    padding-left: 8vw;
+}
+.div23 > h3{
+    font-family: "Inter", Sans-serif;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.div23 > h2{
+    font-family: "Inter", Sans-serif;
+    font-size: 3vw;
+    margin-left: 1vw;
+}
+
+
+.ctts{
+    display: flex;
+    flex-direction: row;
+}
+
+.tel{
+    background-color: white;
+    box-shadow: #555 0.1vw 0.1vw 0.5vw;
+    padding: 1vw;
+    margin: 1vw;
+    text-align: center;
+    border-radius: 0.5vw;
+}
+.tel > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel > div >:nth-child(1) {
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: "Inter", Sans-serif;
+}
+
+.tel > :nth-child(2) {
+    font-size: 1.5vw;
+    font-family: "Inter", Sans-serif;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.tel > :nth-child(3) {
+    font-size: 1vw;
+    font-family: "Inter", Sans-serif;
+}
+
+.ender{
+    background-color: white;
+    box-shadow: #555 0.1vw 0.1vw 0.5vw;
+    padding: 1vw;
+    margin: 1vw;
+    text-align: center;
+    border-radius: 0.5vw;
+}
+
+.ender > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ender > div > :nth-child(1) {
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: "Inter", Sans-serif;
+}
+.ender > :nth-child(2) {
+    font-size: 1.5vw;
+    font-family: "Inter", Sans-serif;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+.email{
+   
+    background-color: white;
+    box-shadow: #555 0.1vw 0.1vw 0.5vw;
+    padding: 1vw;
+    margin: 1vw;
+    text-align: center;
+    border-radius: 0.5vw;
+}
+
+.email > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.email > div> :nth-child(1) {
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: "Inter", Sans-serif;
+}
+.email > :nth-child(2) {
+    font-size: 1.5vw;
+    font-family: "Inter", Sans-serif;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+
+
+.div24{
+
+    background-color: #dbd6d6;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    flex: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+.div24 > div{
+    width: 21vw;
+    margin-bottom: 2vw;
+}
+
+.div24 > div > h2{
+    font-size: 2vw;
+    font-family: "Inter", Sans-serif;
+}
+
+.div24 > div > input{
+    font-size: 1.5vw;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width:0.1vw ;
+    margin: 0.3vw;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.div24 > button{
+    margin-top: 1vw;
+    font-size: 1vw;
+    padding: 0.3vw;
+}
+
+footer{
+    background-color: #211842;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-family: "Inter", Sans-serif;
+    padding: 0.3vw;
 }
