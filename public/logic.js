@@ -12,3 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
 processo.addEventListener('click', ()=>{
     alert('Inscrição Fechada');
 });
+
+
+

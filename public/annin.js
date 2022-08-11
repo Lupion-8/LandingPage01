@@ -1,5 +1,7 @@
 
-    var socket = io();
+const socket = io();
+const maxAbertas = 69, maxFeliz = 93;
+let contNumeros = 0;
 
 
 const contDigital = document.getElementById('um');
@@ -10,6 +12,8 @@ const Quemsomos = document.getElementById('seis');
 const video = document.getElementById('video');
 
 const sete = document.querySelector("#sete");
+const nAbertas = document.getElementById('nAberta');
+const nFeliz = document.getElementById('nFeliz');
 
 contDigital.classList.add('contDigital');
 porqueDigital.classList.add('porqueDigital');
@@ -33,13 +37,23 @@ function estaVisivel(el) {
     let estaVisivel = false
     
     if((inicio >= 0) && (fim <= window.innerHeight)) {
-            estaVisivel = true;
-            Quemsomos.classList.add('quemSomos');
-            video.classList.add('video');
+      estaVisivel = true;
+      Quemsomos.classList.add('quemSomos');
+      video.classList.add('video');
+      numeros();
 
     }else{Quemsomos.classList.remove('quemSomos');}
     
     return estaVisivel;
     
+}
+
+
+
+function numeros(){
+
+
+    
+   
 }
 
