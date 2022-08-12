@@ -33,3 +33,9 @@
     transition: 1s;
     transform: translate(0vw) !important;
 }
+
+
+.servic{
+    transition: 2s;
+    opacity: 1 !important;
+}

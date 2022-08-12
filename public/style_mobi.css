@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    body {
+      content-visibility: none !important;
+    }
+
+    #um {
+        margin-bottom: 20px;
+        font-size: 5vw;
+        font-family: "Inter", Sans-serif;
+    }
+  }
