@@ -1,41 +1,46 @@
-.contDigital{
+@media only screen and (min-width: 600px) {
+    *{ padding: 0px; margin:  0px;}
+    
+    
+    
+    .contDigital{
     transition-delay: 0.7s;
     transition-duration: 2s;
     transform: translate(0vw, 0px) !important;
     opacity:  1 !important;
+    }
 
-}
+    .porqueDigital{
+        transition-delay: 1s;
+        transition-duration: 3s;
+        transform: translate(0vw, 0px) !important;
+        opacity:  1 !important;
+    }
 
-.porqueDigital{
-    transition-delay: 1s;
-    transition-duration: 3s;
-    transform: translate(0vw, 0px) !important;
-    opacity:  1 !important;
-}
+    .imagem1{
+        transition: 0.7s;
+        top: 1vw !important;
+    }
 
-.imagem1{
-    transition: 0.7s;
-    top: 1vw !important;
-}
+    .beneficios{
+        transition: 3s;
+        opacity: 1 !important;
+        margin:  2.5vw !important;
+    }
 
-.beneficios{
-    transition: 3s;
-    opacity: 1 !important;
-    margin:  2.5vw !important;
-}
+    .quemSomos{
+        transition: 1s;
+        opacity: 1 !important;
+    }
 
-.quemSomos{
-    transition: 1s;
-    opacity: 1 !important;
-}
-
-.video{
-    transition: 1s;
-    transform: translate(0vw) !important;
-}
+    .video{
+        transition: 1s;
+        transform: translate(0vw) !important;
+    }
 
 
-.servic{
-    transition: 2s;
-    opacity: 1 !important;
+    .servic{
+        transition: 2s;
+        opacity: 1 !important;
+    }
 }

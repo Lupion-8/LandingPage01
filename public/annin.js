@@ -15,6 +15,7 @@ const sete = document.querySelector("#sete");
 const nAbertas = document.getElementById('nAberta');
 const nFeliz = document.getElementById('nFeliz');
 const servicos = document.querySelector('#servic');
+const div9 = document.querySelector('.div9');
 
 const timerAberta = (seconds) =>  {
   let time = seconds * 1
@@ -89,6 +90,7 @@ function visibleSevice(el) {
   if((inicio >= 0) && (fim <= window.innerHeight)) {
     estaVisivel = true;
     servicos.classList.add('servic');
+    div9.classList.add('adiv9');
   }
    
 }
