@@ -5,6 +5,7 @@
       color: aliceblue;
       position: fixed;
       width: 100%;
+      z-index: 5;
     }
 
     header > div {
@@ -19,9 +20,256 @@
       width: 21vw;
     }
 
-   
+    .section1{
+     top: 16vw;
+     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 50%, rgba(199,199,212,1) 100%);
+     position: relative;
+     overflow: hidden;
+    }
 
-   
+    .organize{
+      display: flex;
+      flex-direction: row;
+      background-image: linear-gradient(to bottom, rgb(255 255 255 / 15%), rgb(4 2 58)), url(./controletes.png);
+      height: 82vw;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .div1{
+      padding: 1vw;
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+
+    .div2{
+      right: 56vw;
+      position: relative;
+      top: -9vw;
+      height: 65vw;
+    }
+
+    #tres{
+      width: 100vw;
+      display: none;
+    }
+
+    .centralize > h1 {
+      margin-bottom: 0.3vw; 
+      font-size: 10vw;
+      font-family: "Inter", Sans-serif;
+    }
+
+    .centralize > p {
+      margin-bottom: 0.3vw; 
+      font-size: 5vw;
+      font-family: "Inter", Sans-serif;
+    }
+
+
+    #quatro{
+      display: flex;
+      flex-direction: row;
+      overflow: auto;
+      padding: 1vw;
+    }
+
+    #cinco{
+      background-color: white;
+      margin: 1vw;
+      padding: 1vw;
+      border-radius: 0.8vw;
+      text-align: center;
+    }
+
+  
+
+    #cinco > div{
+      width: 65vw;  
+    }
+    #cinco > div > img {
+      width: 10vw;
+      margin-top: 2vw;
+    }
+
+    #cinco > div > h2 {
+      font-size: 7vw;
+      font-family: "Inter", Sans-serif;
+      margin-bottom: 1vw;
+    }
+
+    #cinco > div > p {
+      font-size: 5vw;
+      font-family: "Inter", Sans-serif;
+     
+    }
+
+    #seis{
+      background: linear-gradient(180deg, rgb(7 5 78) 0%, rgb(15 14 84) 50%, rgb(255 255 255) 100%);
+      margin-top: 3vw;
+    }
+
+    #sete{
+      text-align: center;
+      margin-top: 2vw;
+    }
+
+
+    .div8{
+      transform: translate(0vw, 50vw);
+    }
+
+    .div9{
+      transform: translate(0vw, -49vw);
+      color: white;
+      font-family: "Inter", Sans-serif;
+      padding: 0.5vw;
+    }
+
+    .div8 > video{
+      width: 96vw;
+      border-radius: 1vw;
+      
+    }
+
+    .div9 > h2{
+      font-size:  8vw;
+      margin-bottom: 5vw;
+    }
+
+    .div10{
+      margin-top: 10vw;
+      text-align: center;
+    }
+
+
+    .div10 > div{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      color: rgb(44, 43, 43);
+      font-family: "Inter", Sans-serif;
+    }
+
+    .div11{
+      background-color: white;
+    }
+
+    #servic{
+      text-align: center;
+      padding-top: 18vw;
+      font-family: "Inter", Sans-serif;
+    }
+
+    #servic > h2{
+      font-size: 10vw;
+      margin-bottom: 2vw;
+    }
+
+    .div12, .div18{
+      display: flex;
+      flex-direction: row;
+      padding: 2vw;
+      padding-top: 10vw;
+      overflow-x: auto;
+    }
+
+    .format{
+      background-color: rgb(24, 23, 59);
+       margin: 1.5vw;
+       border-radius: 1vw;
+       color: white;
+       text-align: center;
+       padding: 5vw;
+       font-family: "Inter", Sans-serif;
+    }
+
+    .format > img{
+      width: 10vw;
+    }
+
+    .format > div{
+      width: 65vw;
+    }
+
+    .div17 >h2{
+      text-align: center;
+      font-family: "Inter", Sans-serif;
+    }
+
+    .elementor-shape-fill{
+      fill: white;
+    }
+
+    #contato{
+      background-color: #ededed;
+    }
+
+    .div22{
+      text-align: center;
+      font-family: "Inter", Sans-serif;
+    }
+
+    .ctts{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .Cformat{
+      background-color:#18173b ;
+      border-radius: 2vw;
+      margin: 1vw;
+      color: white;
+      padding: 2vw;
+      width: 94vw;
+    }
+
+    .div24{
+      padding: 10vw;
+    }
+
+    .div24 > div > input{
+      font-size: 3vw;
+    }
+
+
+    #staticks{
+      position: fixed;
+      background-color: transparent;
+      width: 21vw;
+      height: 22vw;
+      bottom: 2vw;
+      right: 0vw;
+      justify-content: center;
+      right: -40vw;
+      transition: 500ms;
+    }
+
+    #whatsapp-share-btt {
+      display: inline-block;
+      width: 20vw;
+      height: 20vw;
+      background-size: 100% 100%;
+      background-image: url("./wtsa.gif");
+      background-position: center;
+      border-radius: 20vw;
+    }
+
+    footer{
+      text-align: center;
+      background-color: #18173b;
+      color: white;
+      font-size: 2vw;
+    }
+
+
+
+    
+  
+    
 
   
 }

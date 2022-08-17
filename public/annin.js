@@ -17,6 +17,9 @@ const nFeliz = document.getElementById('nFeliz');
 const servicos = document.querySelector('#servic');
 const div9 = document.querySelector('.div9');
 
+const div23 = document.querySelector('.div23');
+const staticks = document.getElementById('staticks');
+
 const timerAberta = (seconds) =>  {
   let time = seconds * 1
   return new Promise(res => setTimeout(res, time))
@@ -37,7 +40,11 @@ beneficios[2].classList.add('beneficios');
 
 
 
-window.onscroll = function() {estaVisivel(sete); visibleSevice(servicos)};
+window.onscroll = function() {
+  estaVisivel(sete); visibleSevice(servicos);
+  visibleContact(div23);
+
+};
 
 
 function estaVisivel(el) {
@@ -78,8 +85,6 @@ async function contFeliz() {
 }
 
 
-
-
 function visibleSevice(el) {
   const posicoes = el.getBoundingClientRect();
   const inicio = posicoes.top;
@@ -92,5 +97,19 @@ function visibleSevice(el) {
     servicos.classList.add('servic');
     div9.classList.add('adiv9');
   }
+   
+}
+
+function visibleContact(el) {
+  const posicoes = el.getBoundingClientRect();
+  const inicio = posicoes.top;
+  const fim = posicoes.bottom;
+
+  let estaVisivel = false
+  
+  if((inicio >= 0) && (fim <= window.innerHeight)) {
+    estaVisivel = true;
+    staticks.classList.add('wpp');
+  }else{ }
    
 }
