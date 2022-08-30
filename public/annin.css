@@ -43,4 +43,9 @@
         transition: 2s;
         opacity: 1 !important;
     }
+
+    .wpp{
+        transition: 1s;
+        right: 0vw !important;
+    }
 }
