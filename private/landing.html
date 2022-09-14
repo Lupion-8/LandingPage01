@@ -229,5 +229,16 @@
    
     <script src="/files/annin.js"></script>
     <script src="/files/logic.js"></script>
+    <script type="text/javascript" src="/files/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".format"), {
+          
+            speed: 200,
+            glare: true
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".format"));
+    </script>
     </body>
 </html>
