@@ -1,6 +1,5 @@
 const processo = document.getElementById('seletivo');
 
-
 document.addEventListener("DOMContentLoaded", function() {
     //conteúdo que será compartilhado: Título da página + URL
     var conteudo = encodeURIComponent('Olá, tenho interesse nos serviços');

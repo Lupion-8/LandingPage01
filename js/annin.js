@@ -1,5 +1,4 @@
 
-const socket = io();
 const maxAbertas = 69, maxFeliz = 93;
 let contNumeros = false;
 
@@ -20,12 +19,12 @@ const div9 = document.querySelector('.div9');
 const div23 = document.querySelector('.div23');
 const staticks = document.getElementById('staticks');
 
-const timerAberta = (seconds) =>  {
+const timerAberta = (seconds) => {
   let time = seconds * 1
   return new Promise(res => setTimeout(res, time))
 }
 
-const timerFeliz = (seconds) =>  {
+const timerFeliz = (seconds) => {
   let time = seconds * 1
   return new Promise(res => setTimeout(res, time))
 }
@@ -40,7 +39,7 @@ beneficios[2].classList.add('beneficios');
 
 
 
-window.onscroll = function() {
+window.onscroll = function () {
   estaVisivel(sete); visibleSevice(servicos);
   visibleContact(div23);
 
@@ -48,37 +47,37 @@ window.onscroll = function() {
 
 
 function estaVisivel(el) {
-    const posicoes = el.getBoundingClientRect();
-    const inicio = posicoes.top;
-    const fim = posicoes.bottom;
+  const posicoes = el.getBoundingClientRect();
+  const inicio = posicoes.top;
+  const fim = posicoes.bottom;
 
-    let estaVisivel = false
-    
-    if((inicio >= 0) && (fim <= window.innerHeight)) {
-      estaVisivel = true;
-      Quemsomos.classList.add('quemSomos');
-      video.classList.add('video');
-      if(!contNumeros)
-      { contAbetas(); 
-        contNumeros = true; contFeliz();
-      }
-     
-    }else{Quemsomos.classList.remove('quemSomos');}   
-     
+  let estaVisivel = false
+
+  if ((inicio >= 0) && (fim <= window.innerHeight)) {
+    estaVisivel = true;
+    Quemsomos.classList.add('quemSomos');
+    video.classList.add('video');
+    if (!contNumeros) {
+      contAbetas();
+      contNumeros = true; contFeliz();
+    }
+
+  } else { Quemsomos.classList.remove('quemSomos'); }
+
 }
 
 
 
 
 async function contAbetas() {
-  for (var i = 0; i < maxAbertas +1; i++) {
+  for (var i = 0; i < maxAbertas + 1; i++) {
     await timerAberta(i);
     document.getElementById('nAberta').textContent = i;
   }
 }
 
 async function contFeliz() {
-  for (var i = 0; i < maxFeliz +1; i++) {
+  for (var i = 0; i < maxFeliz + 1; i++) {
     await timerFeliz(i);
     document.getElementById('nFeliz').textContent = i;
   }
@@ -91,13 +90,13 @@ function visibleSevice(el) {
   const fim = posicoes.bottom;
 
   let estaVisivel = false
-  
-  if((inicio >= 0) && (fim <= window.innerHeight)) {
+
+  if ((inicio >= 0) && (fim <= window.innerHeight)) {
     estaVisivel = true;
     servicos.classList.add('servic');
     div9.classList.add('adiv9');
   }
-   
+
 }
 
 function visibleContact(el) {
@@ -106,10 +105,10 @@ function visibleContact(el) {
   const fim = posicoes.bottom;
 
   let estaVisivel = false
-  
-  if((inicio >= 0) && (fim <= window.innerHeight)) {
+
+  if ((inicio >= 0) && (fim <= window.innerHeight)) {
     estaVisivel = true;
     staticks.classList.add('wpp');
-  }else{ }
-   
+  } else { }
+
 }

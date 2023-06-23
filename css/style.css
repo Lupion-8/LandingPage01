@@ -1,69 +1,75 @@
 @media only screen and (min-width: 600px) {
-    *{ padding: 0px; margin:  0px;}
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
     ::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     ::-webkit-scrollbar-track {
         background: #f1f1f1;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #888;
+        background: #1d1a81;
     }
 
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
 
-    header{
-        background: rgb(2,0,36);
+    header {
+        background: rgb(2, 0, 36);
         color: aliceblue;
         position: fixed;
         width: 100%;
         padding: 1vw;
+        padding-left: 7vw;
         z-index: 3;
     }
 
-    header > div {
+    header>div {
         display: flex;
         flex-direction: row;
     }
 
-    header > div >div{
+    header>div>div {
         flex: auto;
     }
 
-    header > div > :nth-child(2){
+    header>div> :nth-child(2) {
         padding-right: 2vw;
         display: inherit;
         justify-content: end;
         align-items: center;
     }
 
-    #seletivo{
+    #seletivo {
         padding: 0.3vw;
         cursor: pointer;
         font-size: 1vw;
     }
 
-    header > div > div> img{
-        width: 7vw;
+    header>div>div>img {
+        width: 8vw;
     }
 
-    .section1{
-        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(12,9,121,1) 50%, rgba(199,199,212,1) 100%);
+    .section1 {
+        background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(12, 9, 121, 1) 50%, rgba(199, 199, 212, 1) 100%);
         position: absolute;
         height: 100%;
         width: 100%;
     }
 
-    .organize{
-        display: flex; flex-direction: row;
+    .organize {
+        display: flex;
+        flex-direction: row;
         overflow: hidden;
     }
 
-    .div1{
+    .div1 {
         color: aliceblue;
         display: flex;
         align-items: center;
@@ -71,39 +77,41 @@
         flex-direction: column;
         justify-content: center;
     }
-    #um{
+
+    #um {
         transform: translate(100vw, 0px);
         opacity: 0;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         font-size: 4vw;
         font-family: "Inter", Sans-serif;
     }
 
-    #dois{
+    #dois {
         transform: translate(100vw, 0px);
         opacity: 0;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         font-size: 2vw;
         font-family: "Inter", Sans-serif;
     }
 
-    .centralize{
-    background-color:transparent; width: 65%;
+    .centralize {
+        background-color: transparent;
+        width: 65%;
     }
 
-    .div2{
+    .div2 {
         display: flex;
         justify-content: flex-end;
         width: 100%;
     }
 
-    .div2 > div{
+    .div2>div {
         width: 100%;
         display: flex;
-        justify-content:flex-end;
+        justify-content: flex-end;
     }
 
-    #tres{
+    #tres {
         width: 70%;
         top: -42vw;
         position: relative;
@@ -113,11 +121,12 @@
     }
 
 
-    .div3{
+    .div3 {
         position: relative;
-        height:  33vw
+        height: 33vw
     }
-    #quatro{
+
+    #quatro {
         background-color: rgb(255, 255, 255);
         height: 37vw;
         position: relative;
@@ -126,20 +135,20 @@
         justify-content: center;
     }
 
-    #quatro > :nth-child(2){
+    #quatro> :nth-child(2) {
         position: relative;
         bottom: 4vw;
-        background-color:rgb(2,0,36);
+        background-color: rgb(2, 0, 36);
         color: white;
     }
 
 
-    #quatro > :nth-child(2) > div > p{
+    #quatro> :nth-child(2)>div>p {
         margin-top: 1vw;
     }
 
 
-    #cinco{
+    #cinco {
         background-color: rgb(255, 255, 255);
         width: 20vw;
         height: 31vw;
@@ -151,30 +160,32 @@
         opacity: 0;
     }
 
-    #cinco > div{
+    #cinco>div {
         text-align: center;
         width: 100%;
         overflow: hidden;
     }
 
-    #cinco > div > img{
+    #cinco>div>img {
         width: 4vw;
         position: relative;
         top: 1vw;
     }
 
-    #cinco > div > h2{
+    #cinco>div>h2 {
         margin-top: 3vw;
         font-size: 2vw;
         font-family: "Inter", Sans-serif;
     }
-    #cinco > div > p{
+
+    #cinco>div>p {
         margin-top: 2.5vw;
         font-size: 1.5vw;
         padding: 1.5vw;
         font-family: "Inter", Sans-serif;
     }
-    #seis{
+
+    #seis {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -182,13 +193,13 @@
     }
 
 
-    #sete{
+    #sete {
         display: flex;
         flex-direction: row;
     }
 
 
-    #video{
+    #video {
         width: 40vw;
         display: flex;
         align-items: center;
@@ -199,7 +210,7 @@
         transform: translate(-100vw);
     }
 
-    .div9{
+    .div9 {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -209,51 +220,54 @@
         padding-top: 7vw;
     }
 
-    .div9 > div{
+    .div9>div {
         width: 28vw;
     }
 
-    .div9  > h2{
-        font-size:3vw;
+    .div9>h2 {
+        font-size: 3vw;
         font-family: "Inter", Sans-serif;
         font-weight: bold;
     }
 
-    .div9 > div > p{
-        font-size:1.3vw;
+    .div9>div>p {
+        font-size: 1.3vw;
         font-family: "Inter", Sans-serif;
     }
 
-    .div10{
+    .div10 {
         background-color: transparent;
     }
 
-    .div10 > div{
+    .div10>div {
         display: flex;
-        flex-direction:row ;
+        flex-direction: row;
         margin-left: 15vw;
     }
 
-    .div10 > div > div{ margin-left: 2vw;}
+    .div10>div>div {
+        margin-left: 2vw;
+    }
 
-    .div10 > div > div h2{
+    .div10>div>div h2 {
         padding: 0.5vw;
-        font-size:2vw;
+        font-size: 2vw;
         font-family: "Inter", Sans-serif;
         font-weight: bold;
     }
 
-    #nAberta, #nFeliz{
+    #nAberta,
+    #nFeliz {
         font-size: 3.5vw;
     }
 
-    .div11{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
+    .div11 {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
     }
 
-    #servic{
+    #servic {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -261,31 +275,33 @@
         opacity: 0;
     }
 
-    .div11 > :nth-child(1) > div{
+    .div11> :nth-child(1)>div {
         width: 34vw;
         display: flex;
     }
 
-    .div11 > :nth-child(1) > h2{
+    .div11> :nth-child(1)>h2 {
         font-size: 4vw;
         font-family: "Inter", Sans-serif;
     }
 
-    .div11 > :nth-child(1) > div > p{
+    .div11> :nth-child(1)>div>p {
         font-size: 1vw;
         font-family: "Inter", Sans-serif;
         text-align: center;
     }
 
 
-    .div12{
+    .div12 {
         padding: 2vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .div13, .div14, .div15{
+    .div13,
+    .div14,
+    .div15 {
         background-color: white;
         width: 20vw;
         height: 20vw;
@@ -295,31 +311,37 @@
         border-radius: 0.5vw;
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
         transition: 300ms;
     }
-    .div13:hover, .div14:hover, .div15:hover{
+
+    .div13:hover,
+    .div14:hover,
+    .div15:hover {
         background-color: rgb(26, 16, 75);
-        color:  white;
+        color: white;
         transition: 500ms;
     }
 
-    .div17{
+    .div17 {
         display: flex;
         justify-content: center;
     }
-    .div17 > h2{
+
+    .div17>h2 {
         display: none;
     }
 
-    .div18{
+    .div18 {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .div19, .div20, .div21{
+    .div19,
+    .div20,
+    .div21 {
         background-color: white;
         width: 20vw;
         height: 20vw;
@@ -329,41 +351,63 @@
         border-radius: 0.5vw;
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
     }
 
-    .div19:hover, .div20:hover, .div21:hover{
+    .div19:hover,
+    .div20:hover,
+    .div21:hover {
         background-color: rgb(26, 16, 75);
-        color:  white;
+        color: white;
         transition: 500ms;
     }
 
-    .div13 > img, .div14 > img, .div15 > img, .div19 > img,  .div20 > img,  .div21 > img{
+    .div13>img,
+    .div14>img,
+    .div15>img,
+    .div19>img,
+    .div20>img,
+    .div21>img {
         width: 4vw;
         margin-bottom: 1.5vw;
         position: relative;
         top: 1vw;
     }
 
-    .div13 > h2, .div14 > h2, .div15 > h2, .div19 > h2, .div20 > h2, .div21 > h2{
+    .div13>h2,
+    .div14>h2,
+    .div15>h2,
+    .div19>h2,
+    .div20>h2,
+    .div21>h2 {
         font-size: 2vw;
         margin-bottom: 1.5vw;
         font-family: "Inter", Sans-serif;
     }
 
-    .div13 > div, .div14 > div, .div15 > div, .div19 > div, .div20 > div, .div21 > div{
+    .div13>div,
+    .div14>div,
+    .div15>div,
+    .div19>div,
+    .div20>div,
+    .div21>div {
         width: 15vw;
         text-align: center;
     }
 
-    .div13 > div > p, .div14 > div > p, .div15 > div > p, .div19 > div > p, .div20 > div > p, .div21 > div > p{
+    .div13>div>p,
+    .div14>div>p,
+    .div15>div>p,
+    .div19>div>p,
+    .div20>div>p,
+    .div21>div>p {
         font-size: 1.3vw;
         font-family: "Inter", Sans-serif;
         text-align: center;
     }
 
-    #staticks{
+    #staticks {
         position: fixed;
         background-color: transparent;
         width: 6vw;
@@ -377,65 +421,68 @@
     }
 
     #whatsapp-share-btt {
-        display: inline-block;            
+        display: inline-block;
         width: 4.5vw;
         height: 4.5vw;
         margin: 0.3vw;
-        background-size: 100% 100%; /* ou 'contain' */
-        background-image: url("./wts.png");
+        background-size: 100% 100%;
+        /* ou 'contain' */
+        background-image: url("../img/wts.png");
         background-position: center;
         border-radius: 20vw;
     }
-    #whatsapp-share-btt:hover{
+
+    #whatsapp-share-btt:hover {
         transition: 300ms;
         width: 5vw;
-        height: 5vw; 
-        background-image: url("./wtsa.gif");
+        height: 5vw;
+        background-image: url("../img/wtsa.gif");
     }
 
-    #contato{
+    #contato {
         background-color: #dbd6d6;
         display: flex;
         flex-direction: column;
         margin-top: 2vw;
     }
 
-    .elementor-shape-fill{
+    .elementor-shape-fill {
         fill: white;
     }
 
 
-    .div22{
+    .div22 {
         display: flex;
         flex-direction: row;
     }
 
-    .div23{
+    .div23 {
         background-color: #dbd6d6;
         display: flex;
         flex-direction: column;
         padding-top: 1vw;
         padding-left: 8vw;
     }
-    .div23 > h3{
+
+    .div23>h3 {
         font-family: "Inter", Sans-serif;
         font-size: 2vw;
         margin-left: 1vw;
     }
 
-    .div23 > h2{
+    .div23>h2 {
         font-family: "Inter", Sans-serif;
         font-size: 3vw;
         margin-left: 1vw;
     }
 
 
-    .ctts{
+    .ctts {
         display: flex;
         flex-direction: row;
     }
 
-    .tel{
+    .tel {
         background-color: white;
         box-shadow: #555 0.1vw 0.1vw 0.5vw;
         padding: 1vw;
@@ -443,32 +490,33 @@
         text-align: center;
         border-radius: 0.5vw;
     }
-    .tel > div{
+
+    .tel>div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .tel > div >:nth-child(1) {
+    .tel>div>:nth-child(1) {
         font-size: 2.5vw;
         font-weight: bold;
         font-family: "Inter", Sans-serif;
     }
 
-    .tel > :nth-child(2) {
+    .tel> :nth-child(2) {
         font-size: 1.5vw;
         font-family: "Inter", Sans-serif;
         padding-top: 0.5vw;
         padding-bottom: 0.5vw;
     }
 
-    .tel > :nth-child(3) {
+    .tel> :nth-child(3) {
         font-size: 1vw;
         font-family: "Inter", Sans-serif;
     }
 
-    .ender{
+    .ender {
         background-color: white;
         box-shadow: #555 0.1vw 0.1vw 0.5vw;
         padding: 1vw;
@@ -477,26 +525,28 @@
         border-radius: 0.5vw;
     }
 
-    .ender > div{
+    .ender>div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .ender > div > :nth-child(1) {
+    .ender>div> :nth-child(1) {
         font-size: 2.5vw;
         font-weight: bold;
         font-family: "Inter", Sans-serif;
     }
-    .ender > :nth-child(2) {
+
+    .ender> :nth-child(2) {
         font-size: 1.5vw;
         font-family: "Inter", Sans-serif;
         padding-top: 0.5vw;
         padding-bottom: 0.5vw;
     }
-    .email{
-    
+
+    .email {
+
         background-color: white;
         box-shadow: #555 0.1vw 0.1vw 0.5vw;
         padding: 1vw;
@@ -505,19 +555,20 @@
         border-radius: 0.5vw;
     }
 
-    .email > div{
+    .email>div {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .email > div> :nth-child(1) {
+    .email>div> :nth-child(1) {
         font-size: 2.5vw;
         font-weight: bold;
         font-family: "Inter", Sans-serif;
     }
-    .email > :nth-child(2) {
+
+    .email> :nth-child(2) {
         font-size: 1.5vw;
         font-family: "Inter", Sans-serif;
         padding-top: 0.5vw;
@@ -526,46 +577,46 @@
 
 
 
-    .div24{
+    .div24 {
 
         background-color: #dbd6d6;
         display: flex;
         flex-direction: column;
         padding: 5vw;
         flex: auto;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
 
-    .div24 > div{
+    .div24>div {
         width: 21vw;
         margin-bottom: 2vw;
     }
 
-    .div24 > div > h2{
+    .div24>div>h2 {
         font-size: 2vw;
         font-family: "Inter", Sans-serif;
         margin-top: 3vw;
     }
 
-    .div24 > div > input{
+    .div24>div>input {
         font-size: 1.5vw;
         background-color: transparent;
         border-style: none;
         border-bottom-style: solid;
-        border-bottom-width:0.1vw ;
+        border-bottom-width: 0.1vw;
         margin: 0.3vw;
         box-shadow: 0 0 0 0;
         outline: 0;
     }
 
-    .div24 > button{
+    .div24>button {
         margin-top: 1vw;
         font-size: 1vw;
         padding: 0.3vw;
     }
 
-    footer{
+    footer {
         background-color: #211842;
         display: flex;
         align-items: flex-end;
@@ -574,11 +625,14 @@
         font-family: "Inter", Sans-serif;
         padding: 0.3vw;
     }
-    footer >p{
+
+    footer>p {
         font-size: 1vw;
     }
 
-    .tel > div > img, .ender > div > img, .email > div > img{
+    .tel>div>img,
+    .ender>div>img,
+    .email>div>img {
         width: 3vw;
     }
 
